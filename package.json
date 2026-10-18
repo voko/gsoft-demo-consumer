@@ -1,0 +1,22 @@
+{
+  "name": "gsoft-demo-consumer",
+  "version": "1.0.0",
+  "description": "GlobalSoft release report demo",
+  "private": true,
+  "type": "module",
+  "files": [
+    "src/",
+    "dist/"
+  ],
+  "scripts": {
+    "start": "node src/report.js",
+    "test": "node --test",
+    "build": "node src/report.js --build"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "dependencies": {
+    "lodash": "4.18.1"
+  }
+}
