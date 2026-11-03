@@ -2,7 +2,7 @@ name: Consumer shared CI
 
 on:
   push:
-    branches: [main]
+    branches: [main, '**']
   workflow_dispatch:
 
 permissions:
@@ -11,10 +11,10 @@ permissions:
 
 jobs:
   ci:
-    uses: kaismontassar/gsoft-demo/.github/workflows/jfrog-npm-ci.yml@ef72c08e41a741b75988a3a94849b988d4d1c390
+    uses: voko/gsoft-demo/.github/workflows/jfrog-npm-ci.yml@ci-v1
     with:
       project-key: gsoft
       npm-resolve-repo: gsoft-npm-dev-virtual
       npm-dev-repo: gsoft-npm-dev-local
       npm-staging-repo: gsoft-npm-staging-local
-      build-name: globalsoft-security-validation
+      build-name: globalsoft-consumer
