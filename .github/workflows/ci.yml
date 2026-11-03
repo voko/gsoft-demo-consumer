@@ -2,7 +2,7 @@ name: Consumer shared CI
 
 on:
   push:
-    branches: [main]
+    branches: [main, '**']
   workflow_dispatch:
 
 permissions:
