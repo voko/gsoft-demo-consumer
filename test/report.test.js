@@ -21,3 +21,4 @@ test('report sorts services and preserves their versions', () => {
 test('report accepts an empty service list', () => {
   assert.deepEqual(createReport([]).services, []);
 });
+// trigger push test
